@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap');
+
+
+:root {
+    --purple: #A100A1;
+    --red: red;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+html {
+    overflow-x: hidden;
+    font-size: 62.5%;
+}
+
+.heading {
+    color: #333;
+    font-family: 'Nunito', sans-serif;
+    font-size: 4rem;
+    padding: 1rem;
+    padding-top: 6rem;
+    text-align: center;
+    letter-spacing: .2rem;
+}
+
+.heading span {
+    color: var(--purple);
+}
+
+header {
+    width: 96%;
+    background: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: .5rem;
+    box-shadow: 0 .3rem .5rem rgba(0, 0, 0, .3);
+    padding: .3rem 2rem;
+    transition: .2s linear;
+    z-index: 1000;
+}
+
+.header-active {
+    top: 0;
+    width: 100%;
+    border-radius: 0;
+}
+
+header .logo {
+    color: var(--purple);
+    font-family: 'Parisienne', cursive;
+    font-size: 5rem;
+    font-weight: 700;
+}
+
+header .navbar ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+header .navbar ul li {
+    margin: 0 1rem;
+}
+
+header .navbar ul li a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    color: #333;
+    transition: .2s linear;
+}
+
+header .navbar ul li .active,
+header .navbar ul li a:hover {
+    color: var(--red);
+}
+
+header .fa-bars {
+    font-size: 2rem;
+    color: var(--purple);
+    cursor: pointer;
+    display: none;
+}
+
+
+.home {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    padding: 2rem 10rem;
+}
+
+.home .video video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+
+.home .content {
+    margin-top: 7rem;
+}
+
+.home .content h1 {
+    font-family: 'Handlee', cursive;
+    font-size: 6.1vw;
+    color: #FFF;
+    text-shadow: 0 .3rem .5rem #000;
+}
+
+.home .content p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5vw;
+    color: #EEE;
+    text-shadow: 0 .3rem .5rem #000;
+    padding-left: 2rem;
+    border-left: .3rem solid #DDD;
+}
+
+.home .form-container form {
+    margin-top: 8rem;
+    padding: 2rem;
+    width: 40rem;
+    background-color: #FFF;
+    box-shadow: 0 .3rem .5rem rgba(0, 0, 0, .9);
+    border-radius: .5rem;
+}
+
+.home .form-container form h3 {
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.home .form-container form span {
+    font-family: 'Open Sans', sans-serif;
+    color: lightcoral;
+    font-size: 2.5rem;
+    margin: .5rem 0;
+    display: block;
+}
+
+.home .form-container form input {
+    width: 100%;
+    padding: 0 1rem;
+    height: 4rem;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    background-color: #EEE;
+    border: none;
+    outline: none;
+    color: #333;
+    box-shadow: 0 .1rem .3rem rgba(0, 0, 0, .3) inset;
+    border-radius: .5rem;
+}
+
+.home .form-container form input[type="submit"] {
+    width: 10rem;
+    color: #FFF;
+    background: lightcoral;
+    cursor: pointer;
+    font-size: 2rem;
+    margin-top: 2rem;
+    transition: .2s linear
+}
+
+.home .form-container form input[type="submit"]:hover {
+    border: .2rem solid lightcoral;
+    color: lightcoral;
+    background: none;
+}
+
+/* LOCATION */
+
+.locations {
+    height: 125vh;
+    background: #F9F9F9;
+}
+
+.locations .card-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.locations .card-container .card {
+    width: 33rem;
+    margin: 2.5rem;
+    background: #FFF;
+    border-radius: 3rem;
+    box-shadow: 0 .3rem .5rem rgba(0, 0, 0, .3);
+    overflow: hidden;
+    position: relative;
+}
+
+.locations .card-container .card img {
+    height: 25rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.locations .card-container .content {
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+.locations .card-container .content .title {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--purple);
+    font-size: 3rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*media queries*/
+
+@media (max-width: 991px) {
+    
+    .home {
+        flex-flow: column;
+        padding: 1.5rem;
+    }
+
+    .home .content {
+        text-align: center;
+    }
+
+    .home .content h1 {
+        font-size: 5.5rem;
+    }
+
+    .home .content p {
+        font-size: 1.8rem;
+        padding: 0;
+        border: none;
+    }
+}
+
+@media (max-width: 768px) {
+
+    html {
+        font-size: 55%;
+    }
+
+    header .fa-bars {
+        display: block;
+    }
+
+    header .navbar {
+        position: fixed;
+        top: -100rem;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        background-color: #FFF;
+        border-radius: .5rem;
+        box-shadow: 0 .3rem .5rem rgba(0, 0, 0, .3);
+        z-index: 1000;
+        transition: .2s linear;
+        opacity: 0;
+    }
+
+    header .navbar ul {
+        flex-flow: column;
+    }
+
+    header .navbar ul li {
+        margin: 1rem 0;
+        width: 100%;
+        text-align: center;
+    }
+    
+    header .navbar ul li a {
+        display: block;
+        font-size: 3rem;
+    }
+
+    header .nav-toggle {
+        top: 5.5rem;
+        opacity: 1;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .home .form-container {
+        width: 100%;
+    }
+
+    .home .form-container form {
+        width: 100%;
+        margin: 3rem 0;
+    }
+
+    .home .form-container form input[type="submit"] {
+        width: 100%;
+    }
+
+}
